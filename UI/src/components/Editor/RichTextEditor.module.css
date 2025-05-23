@@ -1,0 +1,95 @@
+:root {
+  --primary: #6E3482;
+  --light: #F5EBFA;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editorContainer {
+  border: 1px solid var(--primary);
+  border-radius: 10px;
+  background-color: white;
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  margin: 1rem auto;
+  margin-top: 4rem;
+  width: 90%;
+  max-width: 800px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.toolbar button {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.editor {
+  position: relative;
+  min-height: 300px;
+  padding: 1rem;
+  font-size: var(--font-base);
+  background-color: var(--light);
+  border-radius: 6px;
+  outline: none;
+}
+
+
+.placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  color: #aaa;
+  font-style: italic;
+  pointer-events: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+  flex-wrap: wrap;
+}
+
+/* 📱 Mobile (width < 600px) */
+@media screen and (max-width: 600px) {
+  .editorContainer {
+    padding: 0.8rem;
+    width: 95%;
+  }
+
+  .toolbar button {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* 🧾 Tablets (600px - 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .editorContainer {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .toolbar button {
+    font-size: 1rem;
+  }
+}

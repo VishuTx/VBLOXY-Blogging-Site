@@ -1,0 +1,34 @@
+{
+  "hash": "9f030ef0",
+  "configHash": "d4fcb3c2",
+  "lockfileHash": "71051b3b",
+  "browserHash": "d2501f47",
+  "optimized": {
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "e2caca44",
+      "needsInterop": false
+    },
+    "@fortawesome/react-fontawesome": {
+      "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "da2ea4c1",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "b2324406",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-SZVM5CFR": {
+      "file": "chunk-SZVM5CFR.js"
+    },
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}

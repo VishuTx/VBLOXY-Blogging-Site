@@ -1,0 +1,78 @@
+@import '../../styles/common.module.scss';
+
+.navbar {
+  background: var(--lightest-bg);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  @include card-shadow;
+
+  .container {
+    @include flex-center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    text-decoration: none;
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    a {
+      color: var(--primary-dark);
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    
+    &.primary {
+      background: var(--primary);
+      color: white;
+      
+      &:hover {
+        background: var(--primary-dark);
+      }
+    }
+  }
+
+  .themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--primary-dark);
+    
+    &:hover {
+      color: var(--primary);
+    }
+  }
+
+  @include mobile {
+    .links {
+      gap: 1rem;
+      
+      a:not(.button) {
+        display: none;
+      }
+    }
+  }
+}
