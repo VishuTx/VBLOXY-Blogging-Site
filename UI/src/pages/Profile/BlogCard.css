@@ -1,0 +1,28 @@
+.blog-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.blog-card .clickable {
+  cursor: pointer;
+}
+
+.blog-card .stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6e3482;
+}
+
+.draft-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

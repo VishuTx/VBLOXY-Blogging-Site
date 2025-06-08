@@ -1,0 +1,50 @@
+.user-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.edit-button {
+  background: #6e3482;
+  color: white;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-form input {
+  margin-bottom: 0.5rem;
+  padding: 0.4rem;
+  width: 100%;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+
+/* .profile-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; 
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+} */

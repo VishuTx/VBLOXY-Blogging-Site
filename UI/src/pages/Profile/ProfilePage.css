@@ -1,0 +1,128 @@
+/* Profile Page Wrapper */
+.profile-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Tabs */
+.tab-section {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.tab-section button {
+  padding: 0.6rem 1.4rem;
+  background: #f5ebfa;
+  border: 1px solid #d6c6e6;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.tab-section button:hover {
+  background-color: #e7dbef;
+  transform: translateY(-1px);
+}
+
+.active-tab {
+  background: #a56abd;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Blog List */
+.blogs-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+/* Blog Card Styling */
+.blog-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Inside blog card */
+.blog-card .clickable {
+  cursor: pointer;
+}
+
+.blog-card .stats {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9rem;
+  color: #6e3482;
+}
+
+.draft-actions {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+/* User Info Image + Layout */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.profile-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background-color: #f8f8f8;
+}
+
+.profile-details h2 {
+  margin: 0;
+  color: #6e3482;
+}
+
+.edit-button,
+.draft-actions button {
+  background: #6e3482;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.edit-button:hover,
+.draft-actions button:hover {
+  background: #512766;
+}

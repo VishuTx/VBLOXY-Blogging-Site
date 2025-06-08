@@ -3,10 +3,11 @@ import { ThemeProvider } from './context/ThemeContext';
 import Navbar from './components/Navbar/Navbar';
 import Landing from './pages/Landing/Landing';
 import Explore from './pages/Explore/Explore';
-import Profile from './pages/Profile/Profile';
+
 import Publish from './pages/Publish/Publish';
 import SignUpPage from './pages/Profile/SignUpPage';
 import LoginPage from './pages/Profile/LoginPage';
+import ProfilePage from './pages/Profile/ProfilePage';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<ProfilePage />} />
           <Route path="/publish" element={<Publish />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/signin" element={<LoginPage />} />
