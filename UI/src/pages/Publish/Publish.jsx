@@ -1,9 +1,11 @@
 import React from 'react';
+import RichTextEditor from '../../components/Editor/RichTextEditor';
 
 function Publish() {
   return (
     <div>
-      <h1>Publish</h1>
+      
+      <RichTextEditor/>
     </div>
   );
 }

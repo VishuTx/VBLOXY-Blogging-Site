@@ -8,6 +8,8 @@ import { ToolbarPlugin } from './ToolbarPlugin';
 import { $getRoot, $getTextContent } from 'lexical';
 
 import styles from './RichTextEditor.module.css';
+import Aurora from './Aurora';
+
 
 // Default Lexical config
 const editorConfig = {
@@ -69,12 +71,20 @@ export default function RichTextEditor() {
 
 
   return (
+    <> 
+    <Aurora
+  colorStops={["#5A2C72", "#A06DB0", "#F5EBFA", "#A06DB0", "#5A2C72"]}
+
+  blend={0.5}
+  amplitude={1.0}
+  speed={0.5}
+/> 
     <div className={styles.editorContainer}>
       <LexicalComposer initialConfig={editorConfig}>
         <ToolbarPlugin />
         <RichTextPlugin
           contentEditable={<ContentEditable className={styles.editor} />}
-          placeholder={<div className={styles.placeholder}>Start writing your blog...</div>}
+          // placeholder={<div className={styles.placeholder}>Start writing your blog...</div>}
           ErrorBoundary={LexicalErrorBoundary}
         />
         <HistoryPlugin />
@@ -86,6 +96,7 @@ export default function RichTextEditor() {
         <span>{charCount} characters</span>
       </div>
     </div>
+    </>
   );
 }
 

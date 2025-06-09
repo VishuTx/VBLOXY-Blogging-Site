@@ -2,6 +2,7 @@
   --primary: #6E3482;
   --light: #F5EBFA;
   --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 0;
 }
 
 .editorContainer {

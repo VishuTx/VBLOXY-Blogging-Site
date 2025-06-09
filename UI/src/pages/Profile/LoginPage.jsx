@@ -60,7 +60,7 @@ const LoginPage = ({ onLoginSuccess = () => {} }) => {
       <div className="login-card">
         <div className="login-container">
           <div className="login-header">
-            <h2 className="header-title">SmartHive</h2>
+            <h2 className="header-title">VBLOXY</h2>
             <p className="header-subtitle">Welcome back! Please login to continue</p>
           </div>
 

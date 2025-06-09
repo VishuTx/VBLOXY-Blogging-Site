@@ -78,7 +78,7 @@ const SignUpPage = ({ onSignupSuccess = () => {} }) => {
         <div className="signup-container">
           <div className="signup-header">
             <h2 className="header-title">Sign Up</h2>
-            <p className="header-subtitle">Join SmartHive now</p>
+            <p className="header-subtitle">Join us TODAY!</p>
           </div>
 
           <div className="signup-form-container">
